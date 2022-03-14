@@ -43,8 +43,10 @@ nacimiento mínima de la tabla clientes.*/
 drop function if exists minimo
 delimiter $$
 create function minimo()
-returns datetime
-begin select min(fechanacimiento) from empleados;
+returns datetime 
+begin
+
+RETURN select min(fechanacimiento) from empleados;
 end $$
 
 drop procedure if exists calcular

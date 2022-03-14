@@ -24,11 +24,11 @@ END $$
 
 SELECT calcularmilisegundos2(MILISEGUNDOS) from canciones
 
-
-
 /*
 Tabla: Clientes 
 1. Crear una función que reciba como parámetro el id de un cliente y devuelva la cantidad de facturas que posee el mismo.
 2. Invocar la función para obtener todos los clientes y su cantidad de facturas, utilizando la función creada anteriormente.
 */
+
+
 

@@ -1,0 +1,10 @@
+# para que use esta configuración NO necesito correr la aplicación con
+#               --spring.profiles.active=default
+# default es por defecto el perfil con el cual corre sin pasarle nada, pero
+# se puede usar de todos modos.
+spring:
+  application:
+    name: account-service
+  # Con esto activo el config server
+  config:
+    import: configserver:http://localhost:8888
