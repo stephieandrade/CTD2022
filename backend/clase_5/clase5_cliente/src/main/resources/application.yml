@@ -1,0 +1,12 @@
+server:
+  port: 8081
+spring:
+  application:
+    name: clientservice #es el mismo nombre que esta en github
+  config:
+    import:
+      configserver: http://localhost:8888 #optional es buena practica, 8888 es el puerto en el que esta el servidor
+eureka:
+  client:
+    service-url:
+      defaultZone: http://localhost:8761/eureka
