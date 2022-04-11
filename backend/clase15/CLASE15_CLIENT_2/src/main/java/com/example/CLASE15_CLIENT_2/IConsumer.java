@@ -11,6 +11,6 @@ import java.util.List;
 @LoadBalancerClient(name = "clientservice", configuration=CustomLoadBalancerConfiguration.class)
 public interface IConsumer {
 
-    @GetMapping("/getClients")
+    @GetMapping("/getClients") //get request
     ResponseEntity<List<Object>> getApi();
 }

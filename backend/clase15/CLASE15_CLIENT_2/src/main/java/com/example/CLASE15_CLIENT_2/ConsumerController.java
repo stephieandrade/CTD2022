@@ -11,7 +11,7 @@ import java.util.List;
 public class ConsumerController {
 
 
-    private final IConsumer restConsumer;
+    private final IConsumer restConsumer; //feignclient
 
     @Autowired
     public ConsumerController(IConsumer restConsumer) {
